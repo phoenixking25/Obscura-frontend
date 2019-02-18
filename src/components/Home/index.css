@@ -1,0 +1,43 @@
+.vertical-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginButton {
+  border: 1px solid black !important;
+  border-radius: 5px;
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.loginButton:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.main-image {
+  width: 100%;
+  opacity: 0;
+  animation: image 1s ease-out 2s forwards;
+}
+
+@keyframes image {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical-section {
+    height: 50vh;
+  }
+}

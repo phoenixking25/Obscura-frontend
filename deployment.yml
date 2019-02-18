@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: obscura-frontend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels: # labels to select/identify the deployment
+        app: obscura-frontend  
+    spec:     # pod spec                  
+      containers: 
+      - name: obscura-frontend 
+        image: phoenixking25/obscura-frontend # image we pushed
+        ports:
+        - containerPort: 3000

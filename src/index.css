@@ -1,0 +1,140 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;	
+}
+
+/* global list css */
+
+/* li {
+  padding: 10px;
+} */
+
+ul {
+	list-style-type: circle;
+}
+
+/* Footer global css */
+
+footer {
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+}
+
+.login {
+	background-color: transparent !important;
+	box-shadow: 0px 0px !important;
+}
+
+/* Custom css */
+#mt {
+	margin-top: 10%;
+}
+
+.section {
+	min-height: 100%;
+}
+
+.editor {
+	max-height: 30vh;
+	position: absolute;
+	bottom: 10%;
+	overflow-y: auto;
+}
+
+/* SideNAv css */
+nav,
+main,
+footer {
+	padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+
+	nav,
+	main,
+	footer {
+		padding-left: 0;
+	}
+}
+
+main {
+	min-height: 80vh;
+}
+
+/* loader css */
+.progress {
+	margin-top: 0% !important;
+}
+
+.head {
+	margin-bottom: 20px;
+}
+
+/* FOOTER CSS */
+footer {
+	position: relative;
+	bottom: 0%;
+	width: 100%;
+}
+
+/* Onboard back */
+.onboard-back {
+	min-height: 100vh;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.create-team-button {
+	margin-top: 5%;
+}
+
+/* Team-card-css */
+.team-card {
+	min-height: 80%;
+	position: absolute;
+	width: 100%;
+}
+
+/* Request card */
+.request-back {
+	padding: 2%;
+}
+
+.imageDisplay {
+	padding: 50px;
+}
+
+.team-img {
+	max-width: 70%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.feedback-card {
+	background-color: rgb(114, 114, 114);
+}
+
+.feedback-form {
+	padding: 30px;
+}
+
+.feedback-form .input-field textarea {
+	border-bottom: 1px white solid;
+}
+
+/* select pointer */
+.select-pointer {
+	cursor: pointer;
+}
+
+/* support-card css */
+.support-card {
+	margin-top: 20px;
+}
+
+.react-count-down {
+	display: inline;
+}

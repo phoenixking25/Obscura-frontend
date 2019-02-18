@@ -1,0 +1,40 @@
+.block {
+  height: 100%;
+}
+
+#gradient {
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+#toast-container {
+  bottom: auto !important;
+  left: auto !important;
+  top: 10%;
+  right:7%;  
+}
+
+.toast-success{
+  background-color: green;
+}
+
+.toast-error{
+  background-color: rgb(255, 34, 34);
+}
+
+.fade{
+  opacity: 0;
+  animation: fade-out 1s ease-in forwards;
+}
+
+@keyframes fade-out{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+.tabs .indicator{
+  background-color: grey;
+}

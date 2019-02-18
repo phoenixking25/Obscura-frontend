@@ -1,0 +1,43 @@
+{
+  "name": "obscura",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-bundle": "^2.0.4",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "jwt-decode": "^2.2.0",
+    "loadjs": "^3.5.4",
+    "node-fetch": "^2.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-chartjs": "^1.2.0",
+    "react-chartjs-2": "^2.7.4",
+    "react-count-down": "^1.1.0",
+    "react-dom": "^16.4.1",
+    "react-facebook-login-component": "^0.9.2",
+    "react-google-login": "^3.2.1",
+    "react-redux": "^5.0.7",
+    "react-redux-snackbar": "^1.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-simplemde-editor": "^3.6.16",
+    "react-transition-group": "^1.2.1",
+    "react-twitter-widgets": "^1.7.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "simplemde": "^1.11.2",
+    "socket.io-client": "^2.1.1",
+    "sweetalert2": "^7.28.2",
+    "sweetalert2-react-content": "^1.0.1"
+  },
+  "scripts": {
+    "start": "REACT_APP_STAGE=dev REACT_APP_PASSKEY=123 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prod": "REACT_APP_STAGE=production react-scripts build"
+  }
+}
