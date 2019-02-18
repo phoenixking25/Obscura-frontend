@@ -12,10 +12,20 @@ script:
 - docker build -t phoenixking25/obscura-frontend .
 after_scripts:
 - docker images
-before_deploy:
-- docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+# before_deploy:
+# - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+# deploy:
+#   provider: script
+#   script: docker push phoenixking25/obscura-frontend
+#   on:
+#     branch: master
+
 deploy:
-  provider: script
-  script: docker push phoenixking25/obscura-frontend
-  on:
-    branch: master
+    provider: gae
+    # Skip cleanup so api_key.py and vendored dependencies are still there
+    skip_cleanup: true
+    keyfile: client-secret.json
+    project: obscura
+    default: true
+    on:
+all_branches: true
